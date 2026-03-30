@@ -1,15 +1,33 @@
 h1, h2 {
     color: aqua;
     background-color: black;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     border: 5px rebeccapurple solid;
     padding: 2px;
+    width: 230;
+    margin: 2px;
+    border-radius: 10px;
 }
 
-#cadastro, #login {
-    color: black;
-    font-size: 20px;
-    width: 100px;
-    border: 2px blue solid;
+.cadastro {
+    border: 2px solid #4f46e5;
+    background-color: #f0f9ff;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#email, #senha, #Criar {
+    color: #1f2937;
+    background-color: #e0f2fe;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid #93c5fd;
+    padding: 8px;
+    display: block;
+    margin: 10px auto;
+    width: 230px;
+    border-radius: 6px;
 }
