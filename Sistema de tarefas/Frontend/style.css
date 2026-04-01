@@ -7,7 +7,7 @@ body {
     background-color: #f3f4f6; 
 }
 
-.cadastro {
+#cadastro {
     border: 2px solid #4f46e5;
     background-color: #f0f9ff;
     width: 300px;
@@ -15,19 +15,19 @@ body {
     border-radius: 10px;
 }
 
-.cadastro h1 {
+#cadastro h1 {
     font-size: 18px;
     margin-bottom: 10px;
     color: #1f2937;
 }
 
-.cadastro h2 {
+#cadastro h2 {
     font-size: 16px;
     margin-bottom: 15px;
     color: #374151;
 }
 
-.cadastro input {
+#cadastro input {
     width: 100%;
     padding: 10px;
     margin-bottom: 12px;
