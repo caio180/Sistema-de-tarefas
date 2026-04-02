@@ -1,12 +1,29 @@
+const tela_ini = document.getElementById('inicial')
 const tela_cadas = document.getElementById('cadastro');
+const tela_log = document.getElementById('login');
+
+function tela_inicial() {
+    tela_ini.innerHTML = `
+    
+    <h1>Bem vindo ao sistema de tarefas</h1>
+    <h2>Para continuar, faça seu cadastro ou entre com seu login.</h2>
+    
+    <button onclick="mostrarCadastro()">Cadastro</button>
+    <button onclick="mostrarLogin()">Login</button>
+
+    <div id="inicial"></div>
+    <div id="cadastro" style="display:none;"></div>
+    <div id="login" style="display:none;"></div>
+    
+    `
+
+}
 
 function tela_cadastro() {
     tela_cadas.innerHTML = `
-    <h1>Bem vindo ao sistema de tarefas</h1>
-
     <form id='formCadastro'>
 
-    <h2>Cadastro</h2>
+        <h2>Cadastro</h2>
 
         <input type="text" id="nome" placeholder="Nome completo" required> <br><br>
         <input type="email" id="email" placeholder="Email" required> <br><br>
@@ -37,4 +54,40 @@ function tela_cadastro() {
 
 }
 
-tela_cadastro()
+function tela_login() {
+    tela_log.innerHTML = `
+        <form id="formLogin">
+            <h2>Login</h2>
+            <input type="email" id="email" placeholder="Email"><br><br>
+            <input type="password" id="senha" placeholder="Senha"><br><br>
+            <button type="submit" id="Entrar">Entrar</button>
+        </form>
+    `;
+    const form = document.getElementById('formLogin');
+    form.addEventListener("submit", function (evento2){
+       evento2.preventDefault(); 
+    const email = document.getElementById('email');
+    const senha = document.getElementById('senha');
+    
+    })
+
+}
+
+function mostrarTelaInicial(){
+    tela_inicial();
+    
+    function mostrarCadastro() {
+        tela_cadas.style.display = 'block';
+        tela_log.style.display = 'none';
+        tela_cadastro();
+}
+
+    function mostrarLogin() {
+        tela_cadas.style.display = 'none';
+        tela_log.style.display = 'block';
+        tela_login();
+}
+
+}
+
+
