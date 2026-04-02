@@ -7,14 +7,6 @@ function tela_inicial() {
     
     <h1>Bem vindo ao sistema de tarefas</h1>
     <h2>Para continuar, faça seu cadastro ou entre com seu login.</h2>
-    
-    <button onclick="mostrarCadastro()">Cadastro</button>
-    <button onclick="mostrarLogin()">Login</button>
-
-    <div id="inicial"></div>
-    <div id="cadastro" style="display:none;"></div>
-    <div id="login" style="display:none;"></div>
-    
     `
 
 }
@@ -73,21 +65,18 @@ function tela_login() {
 
 }
 
-function mostrarTelaInicial(){
-    tela_inicial();
-    
-    function mostrarCadastro() {
+ 
+function mostrarCadastro() {
         tela_cadas.style.display = 'block';
         tela_log.style.display = 'none';
         tela_cadastro();
 }
 
-    function mostrarLogin() {
+function mostrarLogin() {
         tela_cadas.style.display = 'none';
         tela_log.style.display = 'block';
         tela_login();
 }
 
-}
 
 
