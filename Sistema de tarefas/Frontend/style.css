@@ -1,27 +1,13 @@
-body {
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-    background-color: #f3f4f6; 
-}
-
-#cadastro {
+#cadastro, #login {
     border: 2px solid #4f46e5;
     background-color: #f0f9ff;
     width: 300px;
     padding: 20px;
     border-radius: 10px;
+    margin: 0 auto;
 }
 
-#cadastro h1 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #1f2937;
-}
-
-#cadastro h2 {
+#cadastro h2, #login h2 {
     font-size: 16px;
     margin-bottom: 15px;
     color: #374151;
@@ -35,10 +21,22 @@ body {
     border-radius: 6px;
     background-color: #e0f2fe;
     font-size: 14px;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
-#Criar {
+#login input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 2px solid #93c5fd;
+    border-radius: 6px;
+    background-color: #e0f2fe;
+    font-size: 14px;
+    box-sizing: border-box; 
+
+}
+
+#Criar, #Entrar {
     width: 200px;
     padding: 10px;
     border: 2px solid #93c5fd;
@@ -51,6 +49,6 @@ body {
     margin: 0 auto;
 }
 
-#Criar:hover {
-    background-color: #bae6fd;
+#Criar:hover, #Entrar:hover {
+    background-color: #a8ace9;
 }
