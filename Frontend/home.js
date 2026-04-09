@@ -58,14 +58,19 @@ function tela_login() {
     const form = document.getElementById('formLogin');
     form.addEventListener("submit", function (evento2){
        evento2.preventDefault(); 
-    const email = document.getElementById('email');
-    const senha = document.getElementById('senha');
+    const email = document.getElementById('email').value;
+    const senha = document.getElementById('senha').value;
     
-    })
+    })  
 
 }
 
- 
+function mostrarTela_inicial (){
+    tela_ini.style.display = 'block';
+    tela_inicial();    
+
+} 
+
 function mostrarCadastro() {
         tela_cadas.style.display = 'block';
         tela_log.style.display = 'none';
