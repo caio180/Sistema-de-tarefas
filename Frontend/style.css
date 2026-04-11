@@ -52,3 +52,6 @@
 #Criar:hover, #Entrar:hover {
     background-color: #a8ace9;
 }
+.oculto {
+    display: none;
+}
