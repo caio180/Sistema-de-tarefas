@@ -1,5 +1,6 @@
 const tela_cadas = document.getElementById('cadastro');
 const tela_log = document.getElementById('login');
+const menu = document.getElementById('menu');
 
 function tela_cadastro() {
     const form = document.getElementById("formCadastro");
@@ -45,14 +46,18 @@ function tela_login() {
 }
 
 function mostrarCadastro() {
-    tela_cadas.style.display = 'block';
-    tela_log.style.display = 'none';
+    tela_cadas.classList.remove('oculto');
+    tela_log.classList.add('oculto');
+    menu.classList.add('oculto');
+    tela_cadastro();
 }
+
 
 function mostrarLogin() {
-    tela_cadas.style.display = 'none';
-    tela_log.style.display = 'block';
+    tela_cadas.classList.add('oculto');
+    tela_log.classList.remove('oculto');
+    menu.classList.add('oculto')
+    tela_login();
 }
 
-tela_cadastro();
-tela_login();
+
