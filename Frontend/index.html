@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"> 
-    <title>Tela inicial</title>
+    <title>Sistema de tarefas</title>
 </head>
 <body>
     
-  <div id="menu">
+<div id="menu">
+    <h1>Bem vindo ao Sistema de tarefas</h1>
+    <h2>Para conseguir acessá-lo, peço que realize o cadastro ou login</h2>
     <button onclick="mostrarCadastro()">Cadastro</button>
     <button onclick="mostrarLogin()">Login</button>
 </div>
@@ -25,6 +27,7 @@
             <button type="submit" id="Criar">Cadastrar-se</button> 
         </form>
        <button onclick="mostrarLogin()">Login</button>
+       <button onclick="mostrarTelaInicial()">Tela inicial</button>
        
      
     </div>
@@ -37,7 +40,8 @@
             <input type="password" id="senhaLogin" placeholder="Senha"><br><br>
 
         </form>
-       <button onclick="mostrarCadastro()">Cadastro</button>     
+       <button onclick="mostrarCadastro()">Cadastro</button>   
+       <button onclick="mostrarTelaInicial()">Tela inicial</button>  
     </div>
 
     <script src="home.js" defer></script>
