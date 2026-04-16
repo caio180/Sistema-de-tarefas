@@ -11,8 +11,8 @@
 <div id="menu">
     <h1>Bem vindo ao Sistema de tarefas</h1>
     <h2>Para conseguir acessá-lo, peço que realize o cadastro ou login</h2>
-    <button onclick="mostrarCadastro()">Cadastro</button>
-    <button onclick="mostrarLogin()">Login</button>
+    <button class="b-cadastro" onclick="mostrarCadastro()">Cadastro</button>
+    <button class="b-login" onclick="mostrarLogin()">Login</button>
 </div>
 
     <div id="cadastro" class="oculto">
@@ -26,8 +26,8 @@
 
             <button type="submit" id="Criar">Cadastrar-se</button> 
         </form>
-       <button onclick="mostrarLogin()">Login</button>
-       <button onclick="mostrarTelaInicial()">Tela inicial</button>
+       <button class="b-login" onclick="mostrarLogin()">Login</button>
+       <button class="b-tela_ini" onclick="mostrarTelaInicial()">Tela inicial</button>
        
      
     </div>
@@ -40,8 +40,8 @@
             <input type="password" id="senhaLogin" placeholder="Senha"><br><br>
 
         </form>
-       <button onclick="mostrarCadastro()">Cadastro</button>   
-       <button onclick="mostrarTelaInicial()">Tela inicial</button>  
+       <button class="b-cadastro" onclick="mostrarCadastro()">Cadastro</button>   
+       <button class="b-tela_ini" onclick="mostrarTelaInicial()">Tela inicial</button>  
     </div>
 
     <script src="home.js" defer></script>
