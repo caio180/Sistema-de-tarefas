@@ -25,29 +25,8 @@ function tela_cadastro() {
             return;
         }
 
-        fetch('http://localhost:3000/cadastro', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                nome,
-                email,
-                senha
-            })
-        })
-        .then(res => res.json())
-        .then(data => {
-            console.log('Resposta do servidor:', data);
-            alert('Cadastro realizado');
-        })
-        .catch(err => {
-            console.error('Erro:', err);
-            alert('Erro ao cadastrar');
-        });
-
-    }); 
-}
+    })
+};
 
 function tela_login() {
     const form = document.getElementById('formLogin');
